@@ -65,8 +65,8 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
         fun bindPopular(movie: Movie) {
             Glide.with(context)
                 .load(movie.backdropImageUrl)
-//                .placeholder(R.drawable.placeholder)
-  //              .error(R.drawable.placeholder)
+                .placeholder(R.drawable.placeholder)
+                .error(R.drawable.placeholder)
                 .into(backdropImage)
         }
 
@@ -78,15 +78,15 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                 Glide.with(context)
                     .load(movie.posterImageUrl)
-    //                .placeholder(R.drawable.placeholder)
-  //                  .error(R.drawable.placeholder)
+                    .placeholder(R.drawable.placeholder)
+                    .error(R.drawable.placeholder)
                     .into(ivPoster)
             }
             else {
                 Glide.with(context)
                     .load(movie.backdropImageUrl)
-    //                .placeholder(R.drawable.placeholder)
-  //                  .error(R.drawable.placeholder)
+                    .placeholder(R.drawable.placeholder)
+                    .error(R.drawable.placeholder)
                     .into(ivPoster)
             }
         }
