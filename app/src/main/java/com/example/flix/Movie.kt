@@ -1,7 +1,11 @@
 package com.example.flix
 
 import org.json.JSONArray
+import android.os.Parcelable
+import kotlinx.parcelize.IgnoredOnParcel
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Movie(
     val movieId: Int,
     val voteAverage: Double,
@@ -9,9 +13,12 @@ data class Movie(
     private val backdropPath: String,
     val title: String,
     val overview: String
-) {
+): Parcelable {
+    @IgnoredOnParcel
     val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath"
+    @IgnoredOnParcel
     val backdropImageUrl = "https://image.tmdb.org/t/p/w342/$backdropPath"
+
     companion object {
         fun fromJsonArray(movieJsonArray: JSONArray): List<Movie> {
             val movies = mutableListOf<Movie>()

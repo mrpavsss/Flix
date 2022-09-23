@@ -16,13 +16,6 @@ class MainActivity : AppCompatActivity() {
     private val movies = mutableListOf<Movie>()
     private lateinit var rvMovies: RecyclerView
 
-    // 1. Define a data model class as the data source - DONE
-    // 2. Add the RecyclerView to the layout - DONE
-    // 3. Create a custom row layout XML file to visualize the item - DONE
-    // 4. Create an Adapter and ViewHolder to render the item - DONE
-    // 5. Bind the adapter to the data source to populate the RecyclerView - DONE
-    // 6. Bind a layout manager to the RecyclerView - DONE
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
