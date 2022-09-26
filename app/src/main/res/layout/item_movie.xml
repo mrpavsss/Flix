@@ -17,6 +17,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="tvTitle"
         android:layout_width="8dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

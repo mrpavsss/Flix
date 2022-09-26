@@ -71,7 +71,7 @@ class DetailActivity : YouTubeBaseActivity() {
                 p2: Boolean
             ) {
                 Log.i(TAG, "onInitializationSuccess")
-                if (voteAverage <= 7.1) {
+                if (voteAverage <= 5) {
                     player?.cueVideo(youtubeKey);
                 }
                 else {
